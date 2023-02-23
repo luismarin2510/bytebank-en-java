@@ -11,12 +11,21 @@ public class test_funcionario {
 		System.out.println(Luis.getNombre() + " salario " + Luis.getSalario());
 		System.out.println("bonificacion "+ Luis.getBonificacion());
 		
-		Funcionario gerente = new Funcionario();
+		/*Funcionario gerente = new Funcionario();
 		gerente.setSalario(2000);
 		gerente.setTipo(1);
 		
+		System.out.println(gerente.getBonificacion());*/
+		
+		Gerente gerente = new Gerente();
+		
+		gerente.setSalario(5000);
+		gerente.setclave("Aluracursos");
+		gerente.setTipo(1);
+		
 		System.out.println(gerente.getBonificacion());
-
+		System.out.println(gerente.iniciarsesion("Aluracursos"));
+		
 	}
 
 }
