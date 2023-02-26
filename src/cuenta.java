@@ -1,5 +1,5 @@
 
-public class cuenta {
+public abstract class cuenta {
 
 	private double saldo;
 	private int agencia;
@@ -7,7 +7,7 @@ public class cuenta {
 	private cliente titular = new cliente();
 	private static int total = 0;
 
-	public void depositar(double valor) {  /// saca 
+	public void depositar(double valor) { /// saca
 		this.saldo = this.saldo + valor;
 	}
 
