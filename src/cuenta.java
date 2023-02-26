@@ -4,7 +4,7 @@ public abstract class cuenta {
 	private double saldo;
 	private int agencia;
 	private int numero;
-	private cliente titular = new cliente();
+	private Cliente titular = new Cliente();
 	private static int total = 0;
 
 	public void depositar(double valor) { /// saca
@@ -77,11 +77,11 @@ public abstract class cuenta {
 	}
 
 	/// encapsulamiento de titular
-	public cliente getTitular() {
+	public Cliente getTitular() {
 		return titular;
 	}
 
-	public void setTitular(cliente titular) {
+	public void setTitular(Cliente titular) {
 		this.titular = titular;
 	}
 

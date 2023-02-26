@@ -1,4 +1,4 @@
-package bytebank;
+
 
 public interface Autenticable {
 	

@@ -20,11 +20,11 @@ public class test_funcionario {
 		Gerente gerente = new Gerente();
 		
 		gerente.setSalario(5000);
-		gerente.setclave("Aluracursos");
+		gerente.setClave("Aluracursos");
 		gerente.setTipo(1);
 		
 		System.out.println(gerente.getBonificacion());
-		System.out.println(gerente.iniciarsesion("Aluracursos"));
+		System.out.println(gerente.iniciarSesion("Aluracursos"));
 		
 	}
 
