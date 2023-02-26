@@ -6,10 +6,17 @@ public class test_referencia {
 		Funcionario funcionario = new Funcionario();
 		funcionario.setNombre("Luis");
 		funcionario.setSalario(2000);
-		
+
 		Gerente gerente = new Gerente();
 		gerente.setNombre("Ximena");
-		gerente.setSalario(10000); 
+		gerente.setSalario(10000);
+		
+		control_bonificacion control_bonificacion = new control_bonificacion();
+		
+		control_bonificacion.registarsalario(funcionario);
+		control_bonificacion.registarsalario(gerente);
+		
+	  
 
 	}
 
