@@ -3,7 +3,7 @@ public class test_funcionario {
 
 	public static void main(String[] args) {
 
-		Funcionario Luis = new Funcionario();
+		Funcionario Luis = new Contador();
 		Luis.setNombre("Luis Marin");
 		Luis.setDocumento("1099368");
 		Luis.setSalario(250);
