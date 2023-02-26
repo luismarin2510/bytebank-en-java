@@ -1,43 +1,47 @@
 
 public class Cliente implements Autenticable {
 
-    private String nombre;
-    private String documento;
-    private String telefono;
+	private String nombre;
+	private String documento;
+	private String telefono;
 
-    private String clave;
+	private String clave;
 
-    public String getNombre() {
-        return nombre;
-    }
+	public String getNombre() {
+		return nombre;
+	}
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
 
-    public String getDocumento() {
-        return documento;
-    }
+	public String getDocumento() {
+		return documento;
+	}
 
-    public void setDocumento(String documento) {
-        this.documento = documento;
-    }
+	public void setDocumento(String documento) {
+		this.documento = documento;
+	}
 
-    public String getTelefono() {
-        return telefono;
-    }
+	public String getTelefono() {
+		return telefono;
+	}
 
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
+	public void setTelefono(String telefono) {
+		this.telefono = telefono;
+	}
 
-    @Override
-    public boolean iniciarSesion(String clave) {
-        return this.clave == clave;
-    }
+	@Override
+	public boolean iniciarSesion(String clave) {
+		if (this.clave == clave) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 
-    @Override
-    public void setClave(String clave) {
-        this.setClave(clave);
-    }
+	@Override
+	public void setClave(String clave) {
+		this.clave = clave;
+	}
 }
