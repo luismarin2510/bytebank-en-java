@@ -7,9 +7,9 @@ public class cuenta_corriente extends cuenta {
 	}
 
 	@Override
-	public void depositar(double valor) {
+	public void retirar(double valor) {
 		double comision = 0.2;
-		super.depositar(valor + comision);
+		super.retirar(valor + comision);
 	}
 
 }

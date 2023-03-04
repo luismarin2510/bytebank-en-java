@@ -11,13 +11,11 @@ public abstract class cuenta {
 		this.saldo = this.saldo + valor;
 	}
 
-	public boolean retirar(double valor) {
-		if (this.saldo >= valor) {
-			this.saldo = this.saldo -= valor;
-			return true;
-		} else {
-			return false;
+	public void retirar(double valor) {
+		if (this.saldo < valor) {
+			throw new SinSaldoSuficienteException("no tienes saldo");
 		}
+		this.saldo -= valor;
 	}
 
 	public boolean transferir(double valor, cuenta cuenta) {
