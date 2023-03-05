@@ -7,7 +7,7 @@ public class test_referencia {
 		funcionario.setNombre("Luis");
 		funcionario.setSalario(2000);
 
-		Gerente gerente = new Gerente();
+		Gerente gerente = new Gerente(null);
 		gerente.setNombre("Ximena");
 		gerente.setSalario(10000);
 

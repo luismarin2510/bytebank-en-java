@@ -17,7 +17,7 @@ public class test_funcionario {
 		
 		System.out.println(gerente.getBonificacion());*/
 		
-		Gerente gerente = new Gerente();
+		Gerente gerente = new Gerente(null);
 		
 		gerente.setSalario(5000);
 		gerente.setClave("Aluracursos");
